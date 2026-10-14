@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prabhjot Kaur — Student | Founder, Global Cover Story</title>
+<meta name="description" content="Prabhjot Kaur — CDLPU student, LPU pathway, and Founder of Global Cover Story, a magazine platform for article features and profile stories.">
+<meta property="og:title" content="Prabhjot Kaur — Student | Founder, Global Cover Story">
+<meta property="og:description" content="CDLPU · LPU · Founder of Global Cover Story magazine features">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff;
+  --bg-soft:#fafafa;
+  --bg-warm:#fff7f7;
+  --text:#1a1a1a;
+  --text-2:#555555;
+  --text-3:#888888;
+  --accent:#8b0000;
+  --accent-soft:#fff0f0;
+  --border:#ececec;
+  --radius:18px;
+  --shadow:0 12px 40px rgba(0,0,0,0.05);
+  --shadow-hover:0 20px 60px rgba(0,0,0,0.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:linear-gradient(180deg,#ffffff 0%,#fafafa 50%,#fff7f7 100%);color:var(--text);line-height:1.65;overflow-x:hidden}
+h1,h2,h3,h4{font-family:Poppins,Inter,sans-serif;font-weight:600;letter-spacing:-0.02em;line-height:1.2}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{width:min(1080px,92%);margin:0 auto}
+section{padding:90px 0}
+.section-label{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.12em;color:var(--accent);margin-bottom:14px}
+.section-title{font-size:34px;max-width:520px;margin-bottom:16px}
+.section-sub{color:var(--text-2);font-size:15px;max-width:560px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:999px;font-weight:500;font-size:14px;transition:all .2s ease;border:none;cursor:pointer}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:0 6px 20px rgba(139,0,0,0.16)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(139,0,0,0.22)}
+.btn-outline{background:#fff;color:var(--text);border:1px solid var(--border)}
+.btn-outline:hover{border-color:var(--accent);color:var(--accent)}
+.pill{display:inline-block;padding:7px 14px;border-radius:999px;background:#fff;border:1px solid var(--border);font-size:12px;color:var(--text-2)}
+/* nav */
+nav{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(255,255,255,0.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(236,236,236,0.7)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{font-family:Poppins,sans-serif;font-weight:700;font-size:17px;color:var(--text)}
+.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{font-size:13px;font-weight:500;color:var(--text-2);transition:color .2s}
+.nav-links a:hover{color:var(--accent)}
+/* hero */
+.hero{padding-top:145px;padding-bottom:70px}
+.hero-grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:55px;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:600;margin-bottom:22px}
+.hero h1{font-size:48px;font-weight:700;margin-bottom:18px}
+.hero h1 .accent{color:var(--accent)}
+.hero p{font-size:16px;color:var(--text-2);max-width:500px;margin-bottom:28px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:32px}
+.hero-meta{display:flex;gap:28px;flex-wrap:wrap}
+.hero-meta div strong{display:block;font-family:Poppins;font-size:15px;font-weight:600;color:var(--text)}
+.hero-meta div span{font-size:12px;color:var(--text-3)}
+.hero-img{position:relative}
+.hero-img img{width:100%;border-radius:var(--radius);box-shadow:var(--shadow);object-fit:cover;aspect-ratio:4/5}
+.hero-img::before{content:"";position:absolute;inset:-16px -16px auto auto;width:60%;height:60%;background:linear-gradient(135deg,rgba(139,0,0,0.07),transparent);border-radius:28px;z-index:-1}
+/* about */
+.about-grid{display:grid;grid-template-columns:0.95fr 1.05fr;gap:55px;align-items:center}
+.about-img img{border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:3/4;object-fit:cover}
+.about-text p{color:var(--text-2);margin-bottom:16px;font-size:15px}
+/* journey */
+.journey{background:var(--bg-soft)}
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:42px}
+.timeline-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);transition:all .2s ease}
+.timeline-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover)}
+.timeline-card .year{font-family:Poppins;font-size:13px;font-weight:700;color:var(--accent);margin-bottom:8px}
+.timeline-card h4{font-size:17px;margin-bottom:8px}
+.timeline-card p{font-size:13px;color:var(--text-2)}
+/* company */
+.company-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:38px;box-shadow:var(--shadow);display:grid;grid-template-columns:1fr 0.7fr;gap:40px;align-items:center;margin-top:40px}
+.company-card h3{font-size:26px;margin-bottom:12px}
+.company-card p{font-size:14px;color:var(--text-2);margin-bottom:18px}
+.company-card img{border-radius:14px;box-shadow:var(--shadow);aspect-ratio:4/3;object-fit:cover}
+/* gallery */
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+.gallery-grid img{width:100%;border-radius:14px;box-shadow:var(--shadow);aspect-ratio:3/4;object-fit:cover;transition:all .2s ease}
+.gallery-grid img:hover{transform:scale(1.02);box-shadow:var(--shadow-hover)}
+.gallery-grid img:first-child{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+/* cta */
+.cta-inner{background:linear-gradient(135deg,#fff 0%,var(--accent-soft) 100%);border:1px solid var(--border);border-radius:28px;padding:58px;text-align:center}
+.cta-inner h2{font-size:32px;margin-bottom:14px}
+.cta-inner p{color:var(--text-2);margin-bottom:26px;max-width:520px;margin-left:auto;margin-right:auto;font-size:15px}
+/* footer */
+footer{padding:45px 0;border-top:1px solid var(--border)}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.footer-links{display:flex;gap:22px}
+.footer-links a{font-size:13px;color:var(--text-2);transition:color .2s}
+.footer-links a:hover{color:var(--accent)}
+/* mobile */
+@media(max-width:900px){
+  .hero-grid,.about-grid,.company-card{grid-template-columns:1fr}
+  .timeline{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:1fr 1fr}
+  .gallery-grid img:first-child{grid-column:span 2;grid-row:span 1;aspect-ratio:1/1}
+  .hero h1{font-size:38px}
+  .nav-links{display:none}
+}
+@media(max-width:560px){
+  .gallery-grid{grid-template-columns:1fr}
+  .gallery-grid img:first-child{grid-column:span 1}
+  .hero h1{font-size:32px}
+  section{padding:64px 0}
+  .cta-inner{padding:38px 24px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a class="logo" href="#">Prabhjot<span>Kaur</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#journey">Journey</a>
+      <a href="#company">Global Cover Story</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="btn btn-primary" href="#contact">Get in touch</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="hero-badge">Student · Entrepreneur · Storyteller</div>
+      <h1>Prabhjot Kaur</h1>
+      <p>CDLPU student on the LPU pathway. Founder of <strong>Global Cover Story</strong> — a magazine-style platform that features people, journeys, and stories worth reading.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact">Connect with me</a>
+        <a class="btn btn-outline" href="#company">See Global Cover Story</a>
+      </div>
+      <div class="hero-meta">
+        <div><strong>CDLPU</strong><span>Higher Studies</span></div>
+        <div><strong>LPU Pathway</strong><span>Regularization Track</span></div>
+        <div><strong>Global Cover Story</strong><span>Founder & Editor</span></div>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="assets/photo-1.jpg" alt="Prabhjot Kaur">
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container about-grid">
+    <div class="about-img">
+      <img src="assets/photo-3.jpg" alt="Prabhjot Kaur at Namdroling Monastery">
+    </div>
+    <div class="about-text">
+      <div class="section-label">About</div>
+      <h2 class="section-title">Driven by stories, built on curiosity.</h2>
+      <p>I am Prabhjot Kaur, a student at <strong>CDLPU</strong> currently pursuing the <strong>LPU regularization pathway</strong>. My academic journey is shaped by discipline, adaptability, and the ambition to build something meaningful alongside my studies.</p>
+      <p>Beyond the classroom, I run <strong>Global Cover Story</strong> — a magazine-style platform where I feature articles, personal profiles, and inspiring journeys. I believe everyone has a story worth reading, and my work is to find those stories and present them beautifully.</p>
+      <p>Whether it is writing, editing, profiling people, or managing a content-driven brand, I enjoy turning ideas into polished, shareable work.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:22px">
+        <span class="pill">Article Writing</span>
+        <span class="pill">Profile Features</span>
+        <span class="pill">Magazine Editing</span>
+        <span class="pill">Content Strategy</span>
+        <span class="pill">Student Leadership</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="journey" class="journey">
+  <div class="container">
+    <div class="section-label">Journey</div>
+    <h2 class="section-title">From student to storyteller.</h2>
+    <p class="section-sub">A quick look at the path that shaped my academic and creative work.</p>
+    <div class="timeline">
+      <div class="timeline-card">
+        <div class="year">CDLPU</div>
+        <h4>Higher Education</h4>
+        <p>Pursuing my degree at CDLPU with a focus on learning, growth, and real-world application.</p>
+      </div>
+      <div class="timeline-card">
+        <div class="year">LPU Pathway</div>
+        <h4>Regularization Track</h4>
+        <p>Advancing through the LPU regularization pathway to broaden academic credentials and opportunities.</p>
+      </div>
+      <div class="timeline-card">
+        <div class="year">Global Cover Story</div>
+        <h4>Founder & Editor</h4>
+        <p>Built a magazine-style platform to publish article features, profiles, and inspiring human stories.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="company">
+  <div class="container">
+    <div class="section-label">Company</div>
+    <h2 class="section-title">Global Cover Story.</h2>
+    <p class="section-sub">A magazine platform for article features, profile stories, and voices that deserve a wider audience.</p>
+    <div class="company-card">
+      <div>
+        <h3>Global Cover Story</h3>
+        <p>Global Cover Story is a content platform built like a modern magazine. We feature people, businesses, creators, and changemakers through long-form articles, interviews, and profile pieces.</p>
+        <p>The goal is simple: find great stories, write them with care, and publish them where they get noticed.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:18px">
+          <span class="pill">Magazine Articles</span>
+          <span class="pill">People Profiles</span>
+          <span class="pill">Brand Stories</span>
+          <span class="pill">Feature Writing</span>
+        </div>
+        <div style="margin-top:22px">
+          <a class="btn btn-primary" href="https://globalcoverstory.com" target="_blank">Visit Global Cover Story</a>
+        </div>
+      </div>
+      <img src="assets/photo-main.jpg" alt="Prabhjot Kaur">
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="journey">
+  <div class="container">
+    <div class="section-label">Gallery</div>
+    <h2 class="section-title">Moments & milestones.</h2>
+    <p class="section-sub">A few candid frames from recent travels and experiences.</p>
+    <div class="gallery-grid">
+      <img src="assets/photo-2.jpg" alt="Prabhjot Kaur at monastery">
+      <img src="assets/photo-4.jpg" alt="Prabhjot Kaur portrait">
+      <img src="assets/photo-5.jpg" alt="Prabhjot Kaur full pose">
+      <img src="assets/photo-6.jpg" alt="Prabhjot Kaur with scarf">
+      <img src="assets/photo-main.jpg" alt="Prabhjot Kaur">
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="cta-inner">
+      <h2>Let's work together.</h2>
+      <p>Looking for article features, magazine collaboration, or just want to connect? Reach out — I'd love to hear from you.</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+        <a class="btn btn-primary" href="https://instagram.com/prabhjotkaur" target="_blank">Instagram DM</a>
+        <a class="btn btn-outline" href="https://globalcoverstory.com" target="_blank">Global Cover Story</a>
+      </div>
+      <p style="margin-top:22px;font-size:13px;color:var(--text-3);">Email: <a href="mailto:contact@globalcoverstory.com" style="color:var(--accent);font-weight:500">contact@globalcoverstory.com</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="logo" style="font-size:15px">Prabhjot<span>Kaur</span></div>
+    <div class="footer-links">
+      <a href="https://globalcoverstory.com" target="_blank">Global Cover Story</a>
+      <a href="https://instagram.com/prabhjotkaur" target="_blank">Instagram</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </div>
+    <div style="font-size:12px;color:var(--text-3)">© 2026 Prabhjot Kaur. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
